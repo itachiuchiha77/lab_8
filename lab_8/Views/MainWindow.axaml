@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:lab_8.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="lab_8.Views.MainWindow"
+		xmlns:local="using:lab_8.Models"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="lab_8"
+		MaxWidth="1280"
+		MaxHeight="720"
+		MinWidth="1280"
+		MinHeight="720"
+		Content="{Binding Content}">
+
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+	
+</Window>
